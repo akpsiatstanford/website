@@ -65,7 +65,7 @@
     color: var(--navy);
     text-decoration: underline;
     text-decoration-color: var(--gold);
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: 1.5px;
     text-underline-offset: 0.2em;
   }
 
