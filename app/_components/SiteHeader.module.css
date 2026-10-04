@@ -1,0 +1,176 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--paper);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  width: var(--content-width);
+  height: var(--header-height);
+  margin-inline: auto;
+}
+
+.desktopNav ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  padding-block: 0.35rem;
+  border-bottom: 2px solid transparent;
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.link:hover {
+  border-bottom-color: var(--gold);
+  color: var(--gold);
+}
+
+.active,
+.active:hover {
+  border-bottom-color: var(--gold);
+  color: var(--navy);
+  font-weight: 500;
+}
+
+.menuButton {
+  display: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  margin-left: -0.625rem;
+  padding: 0.625rem;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.menuButton svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+}
+
+.menuButton:hover,
+.drawerLink:hover {
+  color: var(--gold);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  background: rgb(16 27 51 / 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.backdropVisible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  width: min(82vw, 20rem);
+  height: 100dvh;
+  padding: 0 2rem 2rem var(--gutter);
+  background: var(--paper);
+  transform: translateX(-100%);
+  visibility: hidden;
+  transition:
+    transform 0.25s ease,
+    visibility 0s linear 0.25s;
+}
+
+.drawerOpen {
+  transform: none;
+  visibility: visible;
+  transition:
+    transform 0.25s ease,
+    visibility 0s;
+}
+
+.drawerHeader {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.drawerHeader .menuButton {
+  display: block;
+}
+
+.drawerList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.drawerLink {
+  color: var(--ink);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.drawerActive {
+  color: var(--navy);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+@media (max-width: 48rem) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+}
+
+@media (min-width: 48.0625rem) {
+  .backdrop,
+  .drawer {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop,
+  .drawer,
+  .drawerOpen,
+  .link {
+    transition: none;
+  }
+}
