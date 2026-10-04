@@ -36,7 +36,7 @@ export default function HomePage() {
         <p>
           Learn more about our <Link href="/brotherhood">brothers</Link> and see how AKPsi can help you grow your
           professional career and make the most of your time in college.
-          We <Link href="/recruitment">recruit</Link> new members every fall and spring quarter, and we would love to meet you!
+          We <Link href="/rush">recruit</Link> new members every fall and spring quarter, and we would love to meet you!
           Follow us on <ExternalLink href="https://www.instagram.com/stanford.akpsi/">social media</ExternalLink>{" "} to stay updated.
         </p>
       </section>
