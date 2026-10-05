@@ -13,7 +13,7 @@ export type RushContact = {
 // Set `open` to true when a rush cycle starts and back to false when it ends.
 // Update the relevant contacts, events, times, links, etc. for the current cycle.
 export const rush = {
-  open: true,
+  open: false,
   term: "Fall 2026",
   nextTerm: "Spring 2027",
   team: {
