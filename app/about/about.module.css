@@ -1,0 +1,48 @@
+.page {
+  display: flow-root;
+}
+
+/* Same as the rush contact list (rush.module.css). */
+.values {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.values p {
+  margin: 0;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem 1.5rem;
+  max-width: 42rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 3.5rem;
+}
+
+.logo img {
+  object-fit: contain;
+}
+
+.logoMissing {
+  position: absolute;
+  inset: 0;
+  background: rgb(31 58 110 / 0.08);
+}
+
+/* Five across gets too small to read on phones. */
+@media (max-width: 40rem) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
