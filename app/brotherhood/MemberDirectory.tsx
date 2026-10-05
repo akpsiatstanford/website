@@ -48,7 +48,7 @@ export default function MemberDirectory({ exec, actives }: Props) {
             </button>
             <div className={styles.dialogAside}>
               <div className={`${styles.photo} ${styles.dialogPhoto}`}>
-                <Photo member={selected} sizes="384px" />
+                <Photo key={selected.id} member={selected} sizes="384px" />
               </div>
               {(selected.linkedin || selected.email) && (
                 <div className={styles.contactLinks}>
