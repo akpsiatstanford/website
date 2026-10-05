@@ -1,0 +1,53 @@
+.photo {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  margin: 0;
+  overflow: hidden;
+  background: rgb(31 58 110 / 0.08);
+}
+
+.photo img {
+  object-fit: cover;
+}
+
+.missing {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  color: var(--navy);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Matches the 3rem above each h2 (the margins collapse), so the gap is the same on both sides. */
+.inline {
+  margin-block: 3rem;
+}
+
+/* Only the photo at the very top of the page; photos that start a section keep their gap. */
+main > .inline:first-child {
+  margin-top: 0;
+}
+
+.column {
+  display: none;
+}
+
+/* Text is capped at 42rem (globals.css), so photos fill the space to its right. */
+@media (min-width: 72rem) {
+  .inline {
+    display: none;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    float: right;
+    width: min(26rem, 100% - 45rem);
+    margin: 0 0 1.5rem 3rem;
+  }
+}

@@ -1,10 +1,20 @@
 import Link from "next/link";
 import ExternalLink from "./_components/ExternalLink";
+import PagePhoto, { PhotoColumn, type Photo } from "./_components/PagePhoto";
 import styles from "./page.module.css";
+
+const photos: Photo[] = [
+  { src: "/photos/home-1.jpg", alt: "" },
+  { src: "/photos/home-2.jpg", alt: "" },
+  { src: "/photos/home-3.jpg", alt: "" },
+];
 
 export default function HomePage() {
   return (
-    <main>
+    <main className={styles.page}>
+      <PagePhoto {...photos[0]} />
+      <PhotoColumn photos={photos} />
+
       <h1 className={styles.title}>Alpha Kappa Psi</h1>
       <p className={styles.subtitle}>
         Stanford's Premier Co-Ed Professional Business Fraternity
@@ -20,10 +30,11 @@ export default function HomePage() {
       </section>
 
       <section>
+        <PagePhoto {...photos[1]} />
         <h2>The Pi Tau Chapter</h2>
         <p>
-          Chartered in 1999, the Pi Tau chapter of AKPsi is Stanford's premier co-ed professional business fraternity.
-          Our brothers are broadly interested in business-related careers, but come from diverse backgrounds
+          Founded in 1999, the Pi Tau chapter of AKPsi is Stanford's premier co-ed professional business fraternity.
+          Our brothers are broadly interested in business-related careers but come from diverse backgrounds
           and majors across engineering, the humanities, and the sciences.
           We provide valuable resources for academic, professional, and personal success and learn from each other's strengths.
           Most importantly, we pride ourselves on forming deep friendships and mentorships that last well beyond graduation.
@@ -32,6 +43,7 @@ export default function HomePage() {
       </section>
 
       <section>
+        <PagePhoto {...photos[2]} />
         <h2>Join The Brotherhood</h2>
         <p>
           Learn more about our <Link href="/brotherhood">brothers</Link> and see how AKPsi can help you grow your
