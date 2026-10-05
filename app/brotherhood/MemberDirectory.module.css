@@ -4,8 +4,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, min(var(--tile), (100% - var(--gap)) / 2));
   gap: 2rem var(--gap);
+  justify-content: center;
   max-width: calc(6 * var(--tile) + 5 * var(--gap));
-  margin: 1.25rem 0 0;
+  margin: 1.25rem auto 0;
   padding: 0;
   list-style: none;
 }
