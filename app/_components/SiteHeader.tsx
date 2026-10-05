@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import { CloseIcon, MenuIcon } from "./icons";
 import styles from "./SiteHeader.module.css";
 
 const links = [
@@ -83,9 +84,7 @@ export default function SiteHeader() {
             aria-label="Open menu"
             onClick={() => setOpen(true)}
           >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M3 6h18M3 12h18M3 18h18" />
-            </svg>
+            <MenuIcon />
           </button>
         </div>
       </header>
@@ -112,9 +111,7 @@ export default function SiteHeader() {
             aria-label="Close menu"
             onClick={() => closeMenu(true)}
           >
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M5 5l14 14M19 5L5 19" />
-            </svg>
+            <CloseIcon />
           </button>
         </div>
         <nav aria-label="Mobile">
