@@ -3,7 +3,7 @@ import { rush } from "./rush";
 import styles from "./rush.module.css";
 
 const contacts = [
-  { role: "VP of Recruitment", ...rush.team.vp },
+  { role: "VP Recruitment", ...rush.team.vp },
   ...rush.team.chairs.map((chair) => ({ role: "Rush Chair", ...chair })),
 ];
 

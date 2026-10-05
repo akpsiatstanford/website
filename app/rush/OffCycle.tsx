@@ -9,7 +9,7 @@ export default function OffCycle() {
         <p>
           Our {rush.term} recruitment cycle has ended. If you are interested in rushing AKPsi during
           our next cycle, please check back in {rush.nextTerm} for more details or reach out to our VP
-          of Recruitment, {rush.team.vp.name}. You can stay updated with AKPsi by following us on{" "}
+          Recruitment, {rush.team.vp.name}. You can stay updated with AKPsi by following us on{" "}
           <ExternalLink href="https://www.instagram.com/stanford.akpsi/">Instagram</ExternalLink>.
         </p>
       </section>
