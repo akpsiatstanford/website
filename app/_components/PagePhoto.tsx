@@ -34,7 +34,7 @@ function Frame({ photo, className, sizes }: { photo: Photo; className?: string; 
       {exists ? (
         <Image src={photo.src} alt={photo.alt} fill sizes={sizes} />
       ) : (
-        <span className={styles.missing}>Add public{photo.src}</span>
+        <span className={styles.missing}>public{photo.src}</span>
       )}
     </figure>
   );
