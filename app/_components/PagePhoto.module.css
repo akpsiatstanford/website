@@ -3,7 +3,7 @@
   aspect-ratio: 3 / 2;
   margin: 0;
   overflow: hidden;
-  background: rgb(31 58 110 / 0.08);
+  background: var(--placeholder);
 }
 
 .photo img {

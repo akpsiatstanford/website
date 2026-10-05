@@ -37,7 +37,7 @@
 .logoMissing {
   position: absolute;
   inset: 0;
-  background: rgb(31 58 110 / 0.08);
+  background: var(--placeholder);
 }
 
 /* Five across gets too small to read on phones. */

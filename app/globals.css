@@ -5,6 +5,7 @@
   --ink: #101b33;
   --navy: #1f3a6e;
   --gold: #c9a14a;
+  --placeholder: #e3e0d8;
 
   --gutter: clamp(1.25rem, 7vw, 7rem);
   --content-width: min(100% - 2 * var(--gutter), 72rem);

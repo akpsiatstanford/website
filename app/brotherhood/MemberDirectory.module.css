@@ -32,7 +32,7 @@
   aspect-ratio: 1;
   margin-bottom: 0.7rem;
   overflow: hidden;
-  background: rgb(31 58 110 / 0.08);
+  background: var(--placeholder);
 }
 
 .photoImage {
@@ -49,7 +49,7 @@
   inset: 0;
   display: grid;
   place-items: center;
-  background: #e3e0d8;
+  background: var(--placeholder);
   color: var(--navy);
   font-family: var(--font-sans), system-ui, sans-serif;
   font-size: 1.75rem;
