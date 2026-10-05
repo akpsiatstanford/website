@@ -1,10 +1,10 @@
 .grid {
-  --tile: 12rem;
+  --tile: 11rem;
   --gap: 1.2rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, min(var(--tile), (100% - var(--gap)) / 2));
   gap: 2rem var(--gap);
-  max-width: calc(5 * var(--tile) + 4 * var(--gap));
+  max-width: calc(6 * var(--tile) + 5 * var(--gap));
   margin: 1.25rem 0 0;
   padding: 0;
   list-style: none;
