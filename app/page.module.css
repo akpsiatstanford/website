@@ -1,3 +1,7 @@
+.page {
+  display: flow-root;
+}
+
 .title {
   white-space: nowrap;
 }
