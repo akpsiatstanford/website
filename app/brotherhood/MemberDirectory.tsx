@@ -79,7 +79,7 @@ export default function MemberDirectory({ exec, actives }: Props) {
               <DetailLine
                 values={[
                   selected.hometown,
-                  selected.pledgeClass && `${selected.pledgeClass} Pledge Class`,
+                  selected.pledgeClass && `${selected.pledgeClass} Class`,
                 ]}
               />
               <DetailLine values={[selected.major, selected.gradYear]} />
