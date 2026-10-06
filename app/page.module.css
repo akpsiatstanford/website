@@ -16,3 +16,11 @@
   font-size: 1.5rem;
   line-height: 1.4;
 }
+
+/* Centered along with the page title on mobile (globals.css). */
+@media (max-width: 48rem) {
+  .subtitle {
+    margin-inline: auto;
+    text-align: center;
+  }
+}
