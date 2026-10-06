@@ -35,7 +35,7 @@ export default function AlumniCompanies() {
         No matter what city or country you're in, you can find a Pi Tau near you — and we always
         look forward to welcoming our alumni back to campus during our annual Homecoming Reunion. Go Card!
       </p>
-      <ul className={styles.logos}>
+      {/* <ul className={styles.logos}>
         {companies.map((company) => (
           <li key={company.name} className={styles.logo}>
             {fs.existsSync(path.join(process.cwd(), "public", company.logo)) ? (
@@ -45,7 +45,7 @@ export default function AlumniCompanies() {
             )}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </section>
   );
 }
