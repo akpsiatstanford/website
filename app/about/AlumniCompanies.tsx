@@ -17,10 +17,12 @@ const companies: Company[] = [
   { name: "Citadel", logo: "/logos/citadel.svg" },
   { name: "Cognition", logo: "/logos/cognition.png" },
   { name: "Deloitte", logo: "/logos/deloitte.svg" },
+  { name: "DRW Holdings", logo: "/logos/drw.png" },
   { name: "Evercore", logo: "/logos/evercore.svg" },
   { name: "Jane Street", logo: "/logos/janestreet.svg" },
   { name: "J.P. Morgan", logo: "/logos/jpmorgan.svg" },
   { name: "McKinsey & Company", logo: "/logos/mckinsey.svg" },
+  { name: "Mercor", logo: "/logos/mercor.png" },
   { name: "Meta", logo: "/logos/meta.svg" },
   { name: "Modal", logo: "/logos/modal.png" },
   { name: "Morgan Stanley", logo: "/logos/morganstanley.svg" },
@@ -37,7 +39,7 @@ export default function AlumniCompanies() {
     <section>
       <h2>Our Alumni</h2>
       <p>
-        The lasting connections that we make through AKPsi do not end after graduation.
+        The lasting connections that we develop through AKPsi do not end after graduation.
         Our brothers now live all around the world and work at top firms across a variety of fields,
         including finance, consulting, technology, and much more.
         No matter what city or country you're in, you can find a Pi Tau near you — and we always
