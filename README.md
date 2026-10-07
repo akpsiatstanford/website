@@ -1,4 +1,4 @@
-This is the website for Stanford AKpsi.
+This is the website for Stanford AKPsi.
 
 It is built with the [Next.js](https://nextjs.org) framework (bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)) and deployed using the [Vercel Platform](https://vercel.com/).
 
