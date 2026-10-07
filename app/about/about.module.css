@@ -13,10 +13,14 @@
   margin: 0;
 }
 
+/* Flex rather than grid so a partly filled last row is centered. */
 .logos {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1rem 1.5rem;
+  --per-row: 5;
+  --gap: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem var(--gap);
   max-width: 42rem;
   margin: 1.5rem 0 0;
   padding: 0;
@@ -25,8 +29,7 @@
 
 .logo {
   position: relative;
-  display: grid;
-  place-items: center;
+  width: calc((100% - (var(--per-row) - 1) * var(--gap)) / var(--per-row));
   height: 3.5rem;
 }
 
@@ -43,6 +46,6 @@
 /* Five across gets too small to read on phones. */
 @media (max-width: 40rem) {
   .logos {
-    grid-template-columns: repeat(3, 1fr);
+    --per-row: 3;
   }
 }

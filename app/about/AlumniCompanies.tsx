@@ -12,16 +12,24 @@ type Company = {
 
 // Placeholders: replace with real companies and add their logos to public/logos/.
 const companies: Company[] = [
-  { name: "Company 1", logo: "/logos/company-1.svg" },
-  { name: "Company 2", logo: "/logos/company-2.svg" },
-  { name: "Company 3", logo: "/logos/company-3.svg" },
-  { name: "Company 4", logo: "/logos/company-4.svg" },
-  { name: "Company 5", logo: "/logos/company-5.svg" },
-  { name: "Company 6", logo: "/logos/company-6.svg" },
-  { name: "Company 7", logo: "/logos/company-7.svg" },
-  { name: "Company 8", logo: "/logos/company-8.svg" },
-  { name: "Company 9", logo: "/logos/company-9.svg" },
-  { name: "Company 10", logo: "/logos/company-10.svg" },
+  { name: "Anthropic", logo: "/logos/anthropic.svg" },
+  { name: "Bain & Company", logo: "/logos/bain.svg" },
+  { name: "Citadel", logo: "/logos/citadel.svg" },
+  { name: "Cognition", logo: "/logos/cognition.png" },
+  { name: "Deloitte", logo: "/logos/deloitte.svg" },
+  { name: "Evercore", logo: "/logos/evercore.svg" },
+  { name: "Jane Street", logo: "/logos/janestreet.svg" },
+  { name: "J.P. Morgan", logo: "/logos/jpmorgan.svg" },
+  { name: "McKinsey & Company", logo: "/logos/mckinsey.svg" },
+  { name: "Meta", logo: "/logos/meta.svg" },
+  { name: "Modal", logo: "/logos/modal.png" },
+  { name: "Morgan Stanley", logo: "/logos/morganstanley.svg" },
+  { name: "NVIDIA", logo: "/logos/nvidia.svg" },
+  { name: "OpenAI", logo: "/logos/openai.svg" },
+  { name: "Qatalyst Partners", logo: "/logos/qatalyst.png" },
+  { name: "Rhodes Scholarship", logo: "/logos/rhodes.png" },
+  { name: "Salesforce", logo: "/logos/salesforce.svg" },
+  { name: "Y Combinator", logo: "/logos/yc.png" },
 ];
 
 export default function AlumniCompanies() {
@@ -35,7 +43,7 @@ export default function AlumniCompanies() {
         No matter what city or country you're in, you can find a Pi Tau near you — and we always
         look forward to welcoming our alumni back to campus during our annual Homecoming Reunion. Go Card!
       </p>
-      {/* <ul className={styles.logos}>
+      <ul className={styles.logos}>
         {companies.map((company) => (
           <li key={company.name} className={styles.logo}>
             {fs.existsSync(path.join(process.cwd(), "public", company.logo)) ? (
@@ -45,7 +53,7 @@ export default function AlumniCompanies() {
             )}
           </li>
         ))}
-      </ul> */}
+      </ul>
     </section>
   );
 }
