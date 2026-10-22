@@ -36,7 +36,7 @@ const COLUMNS = [
   "Photo",
 ];
 // Only "active" members appear on the site; the others are kept for records.
-const STATUSES = ["active", "alumni", "coterm", "hidden"];
+const STATUSES = ["active", "hidden"];
 const EXEC_POSITIONS = ["Co-President",
   "VP Finance", "VP Administration", "VP Membership", "VP Professional Development",
   "VP External", "VP Recruitment", "VP Alumni Relations", "Social Chair"];
@@ -84,7 +84,7 @@ function loadRows(): Row[] {
     if (!hometown) errors.push(`${where}: Hometown is blank`);
     if (!STATUSES.includes(status)) {
       errors.push(
-        `${where}: Status must be one of active, alumni, coterm, hidden; got "${field("Status")}"`,
+        `${where}: Status must be one of active or hidden; got "${field("Status")}"`,
       );
     }
     if (field("Position") && !EXEC_POSITIONS.includes(field("Position"))) {
