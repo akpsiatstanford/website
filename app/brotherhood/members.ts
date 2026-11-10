@@ -37,9 +37,9 @@ const COLUMNS = [
 ];
 // Only "active" members appear on the site; the others are kept for records.
 const STATUSES = ["active", "hidden"];
-const EXEC_POSITIONS = ["Co-President",
+const EXEC_POSITIONS = ["Co-President", 
   "VP Finance", "VP Administration", "VP Membership", "VP Professional Development",
-  "VP External", "VP Recruitment", "VP Alumni Relations", "Social Chair"];
+  "VP External", "VP Recruitment", "VP Alumni Relations", "VP Social", "Chairperson"];
 
 const slugify = (name: string) =>
   name
